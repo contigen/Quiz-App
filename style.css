@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightseagreen;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.quiz {
+  width: 500px;
+  min-height: 300px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 10px 10px 15px 15px;
+  padding: 40px;
+  box-shadow: 5px 15px 24px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 480px) {
+  .quiz {
+    max-width: 90%;
+  }
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.quiz img {
+  max-width: 30%;
+  margin: 10px 0 20px;
+}
+span {
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.options {
+  display: grid;
+  gap: 20px;
+  margin: 20px 0;
+  grid-template-columns: repeat(2, auto);
+}
+.options > *,
+.btns > button {
+  font-family: "Gotham Rounded", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px;
+  background: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.btns > button {
+  padding: 10px 50px;
+}
+
+.message {
+  width: 450px;
+  min-height: 300px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 10px 10px 15px 15px;
+  padding: 40px;
+  box-shadow: 5px 15px 24px rgba(0, 0, 0, 0.2);
+}
+.medal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.medal img {
+  max-width: 50%;
+}
+.message p {
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 1.2rem;
+}
+.btns2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btns2 button {
+  font-family: "Gotham Rounded", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  background: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.unclickable {
+  pointer-events: none;
+}
+button:hover {
+  border: 2px solid black;
+}
+.hide {
+  display: none;
+}
+.correct {
+  background: rgb(10, 197, 88);
+  color: #fff;
+  border: none;
+}
+.correct:hover {
+  border: none;
+}
+.wrong {
+  background: rgb(235, 96, 96);
+  color: #fff;
+  border: none;
+}
+.wrong:hover {
+  border: none;
+}

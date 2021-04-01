@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Muhammed Tijani" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="quiz">
+        <div class="title">
+          <h1>A Quiz App</h1>
+          <span>Time:<span id="time">10</span>s</span>
+        </div>
+        <div class="questions hide">
+          <h1>Question</h1>
+          <div class="options"></div>
+        </div>
+        <img src="./Icons/thumbs up.png" alt="a thumbs up image" />
+        <div class="btns">
+          <span id="num" class="hide"></span>
+          <button type="button" id="start">Start</button>
+          <button type="button" id="next" class="hide">Next</button>
+        </div>
+      </div>
+      <div class="message hide">
+    <div class="medal">
+    <img src="./Icons/medal.svg" alt="a medal image" />
+    </div>
+    <h1>Hi Champ!</h1>
+    <p>You got <span id="score"></span> out of 5</p>
+    <div class="btns2">
+    <button type="button"onclick="notShowMessage();startQuiz()">Restart Quiz</button>
+    <button type="button" onclick="notShowMessage();quitQuiz()">Quit Quiz</button>
+    </div>
+    </div>
+    <script src="./quiz.js"></script>
+  </body>
+</html>
